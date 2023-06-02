@@ -6,6 +6,7 @@ that is exported and provided to me by Zendesk.
 import os
 import pandas as pd
 import nltk
+import pytz
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 os.system('clear')
@@ -19,6 +20,10 @@ df = pd.read_csv(CSV_PATH)
 
 # Convert Timestamp to datetime and sort the DataFrame
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
+
+# Convert Timestamp to datetime, localize to UTC and then convert to CDT
+df['Timestamp'] = pd.to_datetime(df['Timestamp']).dt.tz_localize('UTC').dt.tz_convert('America/Chicago')
+
 df.sort_values(by='Timestamp', inplace=True)
 
 # Define a function that checks if a sentence is a question
@@ -41,15 +46,17 @@ for index, row in df.iterrows():
     name = f'{row["First name"]} {row["Last name"]}'
     if name not in questions_by_person:
         questions_by_person[name] = []
-    questions_by_person[name].extend(questions)
+    for question in questions:
+        time = row['Timestamp'].strftime('%H:%M')
+        questions_by_person[name].append((time, question))
 
 # Print the questions along with the person's name who asked it
 total_questions = 0
 for name, questions in questions_by_person.items():
     if len(questions) > 0:
         print(f'{name} asked:')
-        for question in questions:
-            print(f'\t{question}')
+        for time, question in questions:
+            print(f'\t[{time}] {question}')
         print(f'\nTotal questions asked by {name}: {len(questions)}\n')
         total_questions += len(questions)
 
