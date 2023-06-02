@@ -1,0 +1,19 @@
+{
+  "name": "Hello World 2",
+  "author": {
+    "name": "Zack Olinger",
+    "email": "support@whitelotusapps.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}
