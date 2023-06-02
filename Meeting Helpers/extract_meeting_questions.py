@@ -26,8 +26,8 @@ def is_question(sentence):
     # A simple heuristic: if it ends with a question mark, it's a question
     return sentence.endswith('?')
 
-# Initialize a counter for the questions
-question_count = 0 
+# Initialize a dictionary for the questions
+questions_by_person = {}
 
 # Go through all the rows in the DataFrame
 for index, row in df.iterrows():
@@ -37,12 +37,21 @@ for index, row in df.iterrows():
     # Check each sentence to see if it's a question
     questions = [sentence for sentence in sentences if is_question(sentence)]
 
-    # Add the number of questions to the count
-    question_count += len(questions)
+    # Add the questions to the correct person's list in the dictionary
+    name = f'{row["First name"]} {row["Last name"]}'
+    if name not in questions_by_person:
+        questions_by_person[name] = []
+    questions_by_person[name].extend(questions)
 
-    # Print the questions along with the person's name who asked it
-    for question in questions:
-        print(f'Question: {question}\nAsked by: {row["First name"]} {row["Last name"]}\n')
+# Print the questions along with the person's name who asked it
+total_questions = 0
+for name, questions in questions_by_person.items():
+    if len(questions) > 0:
+        print(f'{name} asked:')
+        for question in questions:
+            print(f'\t{question}')
+        print(f'\nTotal questions asked by {name}: {len(questions)}\n')
+        total_questions += len(questions)
 
 # Print the total number of questions at the end
-print(f'Total number of questions: {question_count}')
+print(f'Total number of questions: {total_questions}')
