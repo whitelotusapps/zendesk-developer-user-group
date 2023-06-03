@@ -4,7 +4,7 @@ import time
 import yaml
 from dateutil import parser
 
-with open('.<YOUR YAML FILE NAME>.yaml', encoding="utf-8") as config_data:
+with open('<YOUR YAML FILE NAME>', encoding="utf-8") as config_data:
     config = yaml.load(config_data, Loader=yaml.FullLoader)
 
 instance = '<THE INSTANCE YOU WANT TO CONNECT TO, AS DEFINED IN YOUR YAML FILE>'

@@ -5,10 +5,12 @@ import yaml
 from dateutil import parser
 
 # Open the YAML file that contains our Zendesk instance config info
-with open('.<YOUR YAML FILE NAME>.yaml', encoding="utf-8") as config_data:
+# In this example, the below would be '.example.yaml'
+with open('<YOUR YAML FILE NAME>', encoding="utf-8") as config_data:
     config = yaml.load(config_data, Loader=yaml.FullLoader)
 
 # Define which Zendesk instance to connect to
+# In the .example.yaml file, that would be 'kairos' or 'kairos-sb'
 instance = '<THE INSTANCE YOU WANT TO CONNECT TO, AS DEFINED IN YOUR YAML FILE>'
 
 # Define the domain and auth variables for making requests
