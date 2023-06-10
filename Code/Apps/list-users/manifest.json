@@ -1,0 +1,20 @@
+{
+  "name": "List Users",
+  "author": {
+    "name": "White Lotus Apps",
+    "email": "support@whitelotusapps.com",
+    "url": "https://whitelotusapps.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "nav_bar": {
+        "url": "assets/iframe.html"
+      }
+    }
+  },
+  "version": "1.50",
+  "frameworkVersion": "2.0",
+  "single_install": true
+}
