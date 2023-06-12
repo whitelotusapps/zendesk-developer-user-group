@@ -7,7 +7,7 @@
 - Please visit the main [Wiki](https://github.com/whitelotusapps/zendesk-developer-user-group/wiki) page for the latest information from our past meetings!
 
 ## Community Developed Apps:
-- [User Reports]()
+- [User Reports](https://github.com/whitelotusapps/user-reports)
 
 
 NOTES:
