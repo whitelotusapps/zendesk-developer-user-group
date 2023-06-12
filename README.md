@@ -9,5 +9,8 @@
 - All transcripts and summaries are AI generated, and not thoroughly edited (if edited at all)
 ## Community Developed Apps:
 - [User Reports](https://github.com/whitelotusapps/user-reports)
+
+# Community Developed Admin Python Scripts:
+- [Table of Field Values](https://github.com/whitelotusapps/table-of-field-values)
 ## Past Meetings:
 - Please visit the main [Wiki](https://github.com/whitelotusapps/zendesk-developer-user-group/wiki) page for the latest information from our past meetings!
