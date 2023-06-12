@@ -6,6 +6,7 @@
 ## NOTES:
 - This repo is created and maintained by [Zack Olinger](https://github.com/whitelotusapps) for the purpose of providing an open resource for those who are interested; with the primary audience being users within the [Zendesk Developer User Group](https://usergroups.zendesk.com/developer-user-group/).
 - All of the code here is AS-IS; it is the express responsibility of any party to test and verify any code that may be available on this site
+- We will attempt our best to note which apps and/or scripts perform READ ONLY / WRITE ONLY / READ & WRITE to a Zendesk instance
 - All transcripts and summaries are AI generated, and not thoroughly edited (if edited at all)
 ## Community Developed Apps:
 - [User Reports](https://github.com/whitelotusapps/user-reports)
