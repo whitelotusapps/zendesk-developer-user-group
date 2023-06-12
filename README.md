@@ -1,7 +1,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/whitelotusapps/zendesk-developer-user-group)
 ![GitHub](https://img.shields.io/github/license/whitelotusapps/zendesk-developer-user-group)
 
-# Welcome to the Central Portal for the Zendesk Developer User Group!
+# Welcome to the central repo for the Zendesk Developer User Group!
 
 ## Please visit the main [Wiki](https://github.com/whitelotusapps/zendesk-developer-user-group/wiki) page for the latest information from our past meetings!
 
