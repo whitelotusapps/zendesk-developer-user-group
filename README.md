@@ -10,6 +10,9 @@
 - All transcripts and summaries are AI generated, and not thoroughly edited (if edited at all)
 ## Community Developed Apps:
 - [User Reports](https://github.com/whitelotusapps/user-reports)
+  - May not work well on instances with over 10,000 user objects
+- [Agent Reports](https://github.com/whitelotusapps/agent-reports)
+  - Specifically designed to search only for Admin and Agent users
 
 ## Community Developed Admin Python Scripts:
 - [Table of Field Values](https://github.com/whitelotusapps/table-of-field-values)
