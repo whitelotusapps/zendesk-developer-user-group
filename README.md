@@ -10,7 +10,7 @@
 - All transcripts and summaries are AI generated, and not thoroughly edited (if edited at all)
 ## Community Developed Apps:
 - [User Reports](https://github.com/whitelotusapps/user-reports)
-  - May not work well on instances with over 10,000 user objects
+  - This app will likely not work on instances that have thousands of users; see the below info regarding time to load for the Agent Reports app
 - [Agent Reports](https://github.com/whitelotusapps/agent-reports)
   - Specifically designed to search only for Admin and Agent users
   - As of 2023-06-13, there have been reports of about 3 to 5 minute load times with a few hundred agents
