@@ -14,7 +14,8 @@
 - [Agent Reports](https://github.com/whitelotusapps/agent-reports)
   - Specifically designed to search only for Admin and Agent users
   - As of 2023-06-13, there have been reports of about 3 to 5 minute load times with a few hundred agents
-
+- [Collaborators App](https://github.com/whitelotusapps/collaborators-app)
+  - Add unique tags to Zendesk tickets that allow you to create views based on the collaborators on the ticket
 ## Community Developed Admin Python Scripts:
 - [Table of Field Values](https://github.com/whitelotusapps/table-of-field-values)
 ## Past Meetings:
