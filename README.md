@@ -21,3 +21,4 @@
 - [Postman JSON to CSV](https://github.com/whitelotusapps/postman_json_to_csv)
 ## Past Meetings:
 - Please visit the main [Wiki](https://github.com/whitelotusapps/zendesk-developer-user-group/wiki) page for the latest information from our past meetings!
+- Please use this [suggestion form](https://forms.gle/BmExxd3avgW4Tvec9) to provide me with any information regarding topics, resources, or challenges you would like to explore.
